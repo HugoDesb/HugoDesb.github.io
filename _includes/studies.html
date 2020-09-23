@@ -1,0 +1,23 @@
+{% for i in page. %}
+{% if i <= include.rating %}
+{% assign stars = stars | append: '&#9733;' %}
+{% else %}
+{% assign stars = stars | append: '&#9734;' %}
+{% endif %}
+{% endfor %}
+
+<div id="studies">
+    {% for xp in site.data.resume.studies %}
+    <p class="xp">
+        {% assign date = '' %}
+        {% if xp.end_date %}
+        {% assign date = xp.start_date | append: ' &#183; ' | append : xp.end_date %}
+        {% else %}
+        {% assign date = xp.start_date %}
+        {% endif %}
+        <span class="xp_date">{{date}}</span>
+
+        <span class="xp_desciption">: {{xp.description}}</span>
+    </p>
+    {% endfor %}
+</div>

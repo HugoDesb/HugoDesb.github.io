@@ -1,0 +1,78 @@
+studies:
+  - start_date: Sept 2016
+    end_date: Sept 2019
+    description: Obtention d’un diplôme d’ingénieur en informatique à Polytech Marseille.
+  - start_date: Jan 2015
+    end_date: Juin 2016
+    description: Obtention d’un DUT en informatique à l’IUT d’Annecy.
+  - start_date: Sept 2014
+    end_date: Jan 2015
+    description: 1ère année à l’Ecole Polytechnique Fédérale de Lausanne (EPFL) en section informatique.
+  - start_date: Juin 2014
+    end_date: Sept 2019
+    description: Obtention du baccalauréat S-SVT mention Bien.
+
+experiences:
+  - start_date: Fév 2019
+    end_date: Août 2019
+    place: 
+        structure: SESSTIM
+        city: Marseille
+        country: France
+    description: >- 
+      Stage de 6 mois en laboratoire de recherche informatique. Conception et implémentation d’une chaine de traitement 
+      de fouille de texte en Java afin d’extraire des règles de décision depuis des Recommandations de Bonnes Pratiques cliniques.
+        
+  - start_date: Juin 2018
+    end_date: Juil 2018
+    place: 
+        structure: LIS
+        city: Marseille
+        country: France
+    description: >-
+      Stage de 2 mois en laboratoire de recherche informatique. Développement d’un framework permettant 
+      l’usage de méthodes d’ensembles en apprentissage automatique pour de la fouille de texte.
+
+  - start_date: Mars 2016
+    end_date: Juil 2016
+    place: 
+        structure: Overkiz SAS
+        city: Metz-Tessy
+        country: France
+    description: >-
+      Mise en place en autonomie d’un framework en Java pour tester une interface Web. Recherche documentaire, 
+      benchmark des solutions possibles, implémentation puis formation à l’utilisation du framework.
+  - start_date: Juin
+    end_date: Juil 2014 & 2015
+    place: 
+        structure: ntermarché
+        city: Faverges
+        country: France
+    description: >-
+      Service de la clientèle et maintenance au rayon charcuterie et fromagerie (préparation des stocks, nettoyage).         
+
+skills:
+  - name: POO (Java, C#)
+    rating: 4
+  - name: SQL
+    rating: 4
+  - name: Text Mining (NLP),
+    rating: 3
+  - name: Web (Angular, nodeJS),
+    rating: 4
+  - name: Conception (UML, Merise),
+    rating: 3
+  - name: Data Mining/Warehouse,
+    rating: 3
+  - name: Machine Learning,
+    rating: 3
+  - name: Web Sémantique,
+    rating: 3
+
+languages:
+  - name: Français (maternelle)
+    rating: 5
+  - name: Anglais (TOEIC:975),
+    rating: 4
+        
+    

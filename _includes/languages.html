@@ -1,0 +1,5 @@
+<div class="languages">
+    {% for language in site.data.resume.languages %}
+    {% include star-rating.html name=language.name rating=language.rating %}
+    {% endfor %}
+</div>

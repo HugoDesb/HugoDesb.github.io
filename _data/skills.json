@@ -1,0 +1,34 @@
+[
+    {
+        "name": "POO (Java, C#)",
+        "rating": 4
+    },
+    {
+        "name": "SQL",
+        "rating": 4
+    },
+    {
+        "name": "Text Mining (NLP)",
+        "rating": 3
+    },
+    {
+        "name": "Web (Angular, nodeJS)",
+        "rating": 4
+    },
+    {
+        "name": "Conception (UML, Merise)",
+        "rating": 3
+    },
+    {
+        "name": "Data Mining/Warehouse",
+        "rating": 3
+    },
+    {
+        "name": "Machine Learning",
+        "rating": 3
+    },
+    {
+        "name": "Web Sémantique",
+        "rating": 3
+    }
+]

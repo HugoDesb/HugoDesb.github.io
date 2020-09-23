@@ -1,0 +1,42 @@
+[
+    {
+        "start_date": "Fév 2019",
+        "end_date": "Août 2019",
+        "place": {
+            "structure": "SESSTIM",
+            "city": "Marseille", 
+            "country": "France"
+        },
+        "description": "Stage de 6 mois en laboratoire de recherche informatique. Conception et implémentation d’une chaine de traitement de fouille de texte en Java afin d’extraire des règles de décision depuis des Recommandations de Bonnes Pratiques cliniques."
+    },
+    {
+        "start_date": "Juin 2018",
+        "end_date": "Juil 2018",
+        "place": {
+            "structure": "LIS",
+            "city": "Marseille", 
+            "country": "France"
+        },
+        "description": "Stage de 2 mois en laboratoire de recherche informatique. Développement d’un framework permettant l’usage de méthodes d’ensembles en apprentissage automatique pour de la fouille de texte."
+    },
+    {
+        "start_date": "Mars 2016",
+        "end_date": "Juil 2016",
+        "place": {
+            "structure": "Overkiz SAS",
+            "city": "Metz-Tessy", 
+            "country": "France"
+        },
+        "description": "Mise en place en autonomie d’un framework en Java pour tester une interface Web. Recherche documentaire, benchmark des solutions possibles, implémentation puis formation à l’utilisation du framework."
+    },
+    {
+        "start_date": "Juin",
+        "end_date": "Juil 2014 & 2015",
+        "place": {
+            "structure": "ntermarché",
+            "city": "Faverges", 
+            "country": "France"
+        },
+        "description": "Service de la clientèle et maintenance au rayon charcuterie et fromagerie (préparation des stocks, nettoyage)."
+    }
+]

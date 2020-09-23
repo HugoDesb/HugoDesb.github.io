@@ -1,0 +1,74 @@
+---
+# only here for jekyll to notice it
+---
+
+@use 'normailze';
+
+
+$breakingPoint : 800px;
+$titleFont: Tahoma, Geneva, sans-serif;
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+body{
+    margin: 0;
+    font-family: $titleFont;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start safe;
+    align-items: stretch;
+    align-content: flex-start;
+    height: 100vh;
+
+    div{
+        order:0;
+        flex-grow: 1;
+        flex-shrink:0;
+        align-self: flex-start;
+        width: 50%;
+        height: 100%;
+    }
+
+    .half__image{
+        background-color: red;
+        background-image: url("{{ '../img/norway.jpg' | prepend: site.baseurl}}");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 50% 50%;
+        background-size: cover;
+        min-width:$breakingPoint/2;
+        @media screen and (max-width: $breakingPoint) {
+            height: 500px;
+        }
+    }
+
+    .half__content{
+        .inner-vertical{
+            margin: auto 0 auto 0;
+            width:100%;
+
+            .inner-horizontal{
+
+            }
+        }
+
+        h1{
+            font-size: 4em;
+        }
+        p{
+            font-size: 1.6em;
+        }
+    }
+
+}
+
+
+
