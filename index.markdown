@@ -5,4 +5,4 @@
 layout: card
 ---
 
-Bonjour et bienvenue sur mon site. Je vous en prie mettez vous à l'aise, enlevez vos pompes. **Trankil fraté**
+Ingénieur en informatique, je suis à la recherche d'un premier emploi. J'ai précédemment travaillé au sein de laboratoires de recherche informatique à travers des projects liés à la NLP lors de stage d'études.
