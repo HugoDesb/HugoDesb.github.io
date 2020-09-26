@@ -1,10 +1,18 @@
 {% assign stars = '' %}
+{% assign empty-star = '<i class="far fa-star"></i>' %}
+{% assign half-star = '<i class="fas fa-star-half-alt"></i>' %}
+{% assign full-star = '<i class="fas fa-star"></i>' %}
+
+
 {% for i in (1..5) %}
-{% if i <= include.rating %}
-{% assign stars = stars | append: '&#9733;' %}
-{% else %}
-{% assign stars = stars | append: '&#9734;' %}
-{% endif %}
+    {% assign diff = include.rating | minus: i%}
+    {% if diff > 0.5 %}
+        {% assign stars = stars | append: full-star %}
+    {% elsif diff == 0.5 %}
+        {% assign stars = stars | append: half-star %}
+    {% else %}
+        {% assign stars = stars | append: empty-star %}
+    {% endif %}
 {% endfor %}
 
 <p class="star-rating">

@@ -1,0 +1,22 @@
+#social-links{
+    display: flex;
+    flex-direction: row;
+    
+    a{
+        margin-right: 10px;
+        button{
+            color: $themeColor;
+            background-color: $backgroundColor;
+            border-radius: none;
+            border: 1px solid $themeColor;
+            padding: 10px;
+            transition: all 0.2s ease ;
+            font-size: 1.2em;
+        }
+
+        button:hover{
+            color: $backgroundColor;
+            background-color: $themeColor;
+        }
+    }
+}

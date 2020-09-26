@@ -30,7 +30,15 @@ twitter_username: HugoDesb
 github_username:  HugoDesb
 
 me:
-  - img: /assets/img/norway.jpg
+  fullname: Hugo Desbiolles
+  img: /assets/img/norway.jpg
+  socials: 
+  - name: Twitter
+    icon: twitter
+    link: https://twitter.com/HugoDesb
+  - name: Github
+    icon: github
+    link: https://github.com/HugoDesb
 
 # Build settings
 plugins:

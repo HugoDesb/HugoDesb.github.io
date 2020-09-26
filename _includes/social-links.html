@@ -1,6 +1,5 @@
 <div id="social-links">
-    {% for social in site.socials%}
-    <a href="{{social.link}}"
-    <a href="{{social.link}}"><button>{{social.name}}</button></a>
+    {% for social in site.me.socials%}
+    <a target="_blank" href="{{social.link}}"><button>{{social.name}}</button></a>
     {% endfor%}
 </div>

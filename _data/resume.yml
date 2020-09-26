@@ -53,7 +53,7 @@ experiences:
 
 skills:
   - name: POO (Java, C#)
-    rating: 4
+    rating: 4.5
   - name: SQL
     rating: 4
   - name: Text Mining (NLP),
@@ -61,7 +61,7 @@ skills:
   - name: Web (Angular, nodeJS),
     rating: 4
   - name: Conception (UML, Merise),
-    rating: 3
+    rating: 3.5
   - name: Data Mining/Warehouse,
     rating: 3
   - name: Machine Learning,

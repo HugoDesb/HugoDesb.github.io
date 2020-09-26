@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+{% include head.html %}
+
+<body>
+
+    <main>
+        <div class="headingContainer">
+            <div class="arrow-right"></div>
+            <h1>{{site.me.fullname}}</h1>
+        </div>
+
+        <section class="resume-chapter">
+            <div class="headingContainer">
+                <div class="arrow-right"></div>
+                <h1>Formation</h1>
+            </div>
+            <div class="resume-content">
+                {% for xp in site.data.resume.studies %}
+                <p class="xp">
+                    {% assign date = '' %}
+                    {% if xp.end_date %}
+                    {% assign date = xp.start_date | append: ' &#183; ' | append : xp.end_date %}
+                    {% else %}
+                    {% assign date = xp.start_date %}
+                    {% endif %}
+                    <span class="date">{{date}}</span>
+            
+                    <span class="description">: {{xp.description}}</span>
+                </p>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="resume-chapter">
+            <div class="headingContainer">
+                <div class="arrow-right"></div>
+                <h1>Expériences</h1>
+            </div>
+            <div class="resume-content">
+                {% for xp in site.data.resume.experiences %}
+                <p class="xp">
+                    {% assign date = '' %}
+                    {% if xp.end_date %}
+                    {% assign date = xp.start_date | append: ' &#183; ' | append : xp.end_date %}
+                    {% else %}
+                    {% assign date = xp.start_date %}
+                    {% endif %}
+                    <span class="date">{{date}}</span>
+                    <span class="place"> {{xp.place.structure | append: ' &#x2012; ' | append: xp.place.city | append: ', ' | append: xp.place.country}}</span>
+                    <span class="desciption">: {{xp.description}}</span>
+                </p>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="resume-chapter">
+            <div class="headingContainer">
+                <div class="arrow-right"></div>
+                <h1>Compétences techniques</h1>
+            </div>
+            <div class="resume-content">
+                {% for skill in site.data.resume.skills %}
+                {% include star-rating.html name=skill.name rating=skill.rating %}
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="resume-chapter">
+            <div class="headingContainer">
+                <div class="arrow-right"></div>
+                <h1>Langues</h1>
+            </div>
+            <div class="resume-content">
+                {% for language in site.data.resume.languages %}
+                {% include star-rating.html name=language.name rating=language.rating %}
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="resume-chapter">
+            <div class="headingContainer">
+                <div class="arrow-right"></div>
+                <h1>Hobbies</h1>
+            </div>
+            <div class="resume-content">
+                {{content}}
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

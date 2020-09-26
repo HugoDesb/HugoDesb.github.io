@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+{% include head.html %}
+
+<body>
+
+    <section id="visit-card">
+        <div id="card">
+            <div class="headingContainer">
+                <div class="arrow-right"></div>
+                <h1>{{site.me.fullname}}</h1>
+            </div>
+            <p>{{content}}</p>
+            <a href="/resume">
+                <button>Mon CV</button>
+            </a>
+        </div>
+
+        <nav id="social-links">
+            <ul>
+                {% for social in site.me.socials%}
+                <li>
+                    <a href="{{social.link}}">
+                        <i class="fab fa-{{social.icon}} fa-2x"></i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+
+    </section>
+</body>
+
+</html>
