@@ -59,6 +59,7 @@ body{
     margin: 0;
     font-family: $fontregular;
     background-image: url("../img/norway.jpg");
+    background-attachment: fixed;
     
 }
 
@@ -119,7 +120,7 @@ body{
 
     width: $width;
     background-color: $backgroundColor;
-    border-left: 10px solid $themeColor;
+    border-left: 5px solid $themeColor;
 
     padding: 10px 0 10px 0;
 
@@ -191,9 +192,10 @@ nav#social-links{
 
 main{
     background-color: $backgroundColor;
-    width:800px;
+    width:100%;
+    max-width: 800px;
     margin: 0 auto 0 auto;
-    border-left: 10px solid $themeColor;
+    border-left: 5px solid $themeColor;
 
     display: flex;
     flex-direction: column;

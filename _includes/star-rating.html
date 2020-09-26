@@ -4,12 +4,12 @@
 {% assign full-star = '<i class="fas fa-star"></i>' %}
 
 
-{% for i in (1..5) %}
+{% for i in (0..4) %}
     {% assign diff = include.rating | minus: i%}
-    {% if diff > 0.5 %}
-        {% assign stars = stars | append: full-star %}
-    {% elsif diff == 0.5 %}
+    {% if diff == 0.5 %}
         {% assign stars = stars | append: half-star %}
+    {% elsif diff > 0 %}
+        {% assign stars = stars | append: full-star %}
     {% else %}
         {% assign stars = stars | append: empty-star %}
     {% endif %}
