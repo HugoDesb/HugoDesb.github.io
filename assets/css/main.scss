@@ -58,8 +58,9 @@ $arrowHeight: 40px;
 body{
     margin: 0;
     font-family: $fontregular;
-    background-image: url("../img/norway.jpg");
     background-attachment: fixed;
+    background-image: url("../img/norway.jpg");
+    
 }
 
 #visit-card{
@@ -118,10 +119,10 @@ body{
 #card{
 
     width: $width;
-    background-color: $backgroundColor;
-    border-left: 5px solid $themeColor;
-
     padding: 10px 0 10px 0;
+
+    border-left: 5px solid $themeColor;
+    background-color: $backgroundColor;
 
     display: flex;
     flex-direction: column;
