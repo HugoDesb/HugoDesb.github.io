@@ -229,7 +229,13 @@ main{
             font-style: italic;
         }
     }
+
+    a{
+        color: $themeColor;
+    }
 }
+
+
 
 .star-rating i{
     color: $themeColor;
